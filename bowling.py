@@ -1,7 +1,5 @@
 #! /usr/bin/env python
 
-from random import randint
-
 class Score:
     """Score class, stores score and whether or not is has been a strike or a spare"""
     score = None
@@ -55,6 +53,7 @@ class Scoreboard:
             
 
 def getThrow(max_score):
+    from random import randint
     return randint(0,max_score)
 
 
